@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 const Contact = () => {
   return (
     <div>
-      <h2>Welcome to the Contact Page</h2>
+      <h2>Welcome to the Contact Page. this is my number:</h2>
 
     </div>
   );
