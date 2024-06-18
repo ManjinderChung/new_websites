@@ -1,15 +1,29 @@
 import { Link } from "react-router-dom";
 import React from "react";
-//created a NavBar to display on all pages
+import { Container } from "react-bootstrap";
+import "../Navbar.css"; // Custom CSS file for navbar
+
 const NavBar = () => {
   return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/projects">Projects</Link>
-      <Link to="/contact us">Contact</Link>
-      <Link to="/services">Services</Link>
-    </nav>
+    <Container className="nav-container">
+      <nav className="navBar">
+        <Link to="/" className="nav-button">
+          Home
+        </Link>
+        <Link to="/about" className="nav-button">
+          About
+        </Link>
+        <Link to="/services" className="nav-button">
+          Services
+        </Link>
+        <Link to="/projects" className="nav-button">
+          Projects
+        </Link>
+        <Link to="/contact us" className="nav-button">
+          Contact
+        </Link>
+      </nav>
+    </Container>
   );
 };
 

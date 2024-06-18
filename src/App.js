@@ -5,13 +5,17 @@ import Projects from "./components/Projects.js";
 import About from "./components/About.js";
 import Contact from "./components/ContactUs.js"
 import NavBar from "./components/NavBar";
+import Logo from "./components/logo"
 import Services from "./components/Services.js"
+import "bootstrap/dist/css/bootstrap.min.css";
+
 function App() {
   return (
     // Wrap the entire app with the TotalPriceProvider
     
       <div>
         <NavBar />
+        <Logo />  
         {/* Define routes for the application */}
         <Routes>
           <Route exact path="/" element={<Home />} />

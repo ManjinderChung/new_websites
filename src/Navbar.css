@@ -1,0 +1,29 @@
+.nav-container {
+  padding: 0; /* Remove default padding if any */
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around; /* Equally space out the buttons */
+  background-color: #f8f9fa; /* Light background color for the navbar */
+  padding: 10px;
+}
+
+.nav-button {
+  background-color: #d3d3d3; /* Light grey background */
+  border: 1px solid #a9a9a9; /* Border color to match the grey theme */
+  color: #000; /* Text color */
+  padding: 10px 20px; /* Padding inside the buttons */
+  text-align: center; /* Center text inside buttons */
+  text-decoration: none; /* Remove underline from links */
+  border-radius: 20px; /* Oval shape */
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  font-family: 'Arial', sans-serif; /* Professional-looking font */
+  font-size: 16px; /* Font size */
+}
+
+.nav-button:hover {
+  background-color: #a9a9a9; /* Darker grey on hover */
+  border-color: #696969; /* Darker border on hover */
+}
+

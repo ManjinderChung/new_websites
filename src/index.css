@@ -1,13 +1,10 @@
 body {
+  /* Define the gradient background */
+  background: linear-gradient(to bottom, #fbfeff, #5a91b1);
+  /* Ensure the background covers the entire page */
+  min-height: 100vh;
+  /* Add some default margin and padding to ensure full coverage */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
