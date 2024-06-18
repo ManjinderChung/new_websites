@@ -5,7 +5,7 @@ import Projects from "./components/Projects.js";
 import About from "./components/About.js";
 import Contact from "./components/ContactUs.js"
 import NavBar from "./components/NavBar";
-
+import Services from "./components/Services.js"
 function App() {
   return (
     // Wrap the entire app with the TotalPriceProvider
