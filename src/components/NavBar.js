@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import { Container } from "react-bootstrap";
-import "../Navbar.css"; // Custom CSS file for navbar
+import "./Navbar.css"; // Custom CSS file for navbar
 
 const NavBar = () => {
   return (

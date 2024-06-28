@@ -1,33 +1,139 @@
-/* Logo.css */
-
-.logo-container {
-    display: flex;
-    flex-direction: column; /* Stack logo and text vertically */
-    justify-content: center;
-    align-items: center;
-    min-height: 10vh; /* Ensure the logo is centered vertically on the page */
-    margin: 20px 0; /* Add some margin for spacing */
-}
-
-.about-logo {
-    width: 300px;
-    height: 300px;
-    object-fit: contain; /* Ensure the logo is properly scaled */
-    border: 2px solid #005792; /* Optional border for a professional look */
-    border-radius: 10px; /* Slight rounding for a polished appearance */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.3s ease; /* Smooth scaling on hover */
-}
-
-.about-logo:hover {
-    transform: scale(1.05); /* Slightly increase the size on hover */
-}
-
+/* Company Name */
 .company-name {
-    margin-top: 15px; /* Space between logo and text */
+    margin-bottom: 15px; /* Space between text and logo */
     font-size: 1.5em; /* Larger font size for company name */
     font-weight: bold; /* Bold text */
     color: #005792; /* Dark blue color for a professional look */
     font-family: 'Arial', sans-serif; /* Professional-looking font */
     text-align: center; /* Center the text */
+}
+
+/* Container for Logo and Gallery */
+.logo-gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px; /* Add padding at the top for spacing */
+    margin: 20px auto; /* Center the container horizontally */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+/* About Logo */
+.about-logo {
+    width: 20%; /* 50% smaller than the original width (40%) */
+    max-width: 100px; /* 50% smaller than 200px */
+    height: auto;
+    object-fit: contain; /* Ensure the logo is properly scaled */
+    border: 2px solid #005792; /* Optional border for a professional look */
+    border-radius: 10px; /* Slight rounding for a polished appearance */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+    
+    /* Center the logo */
+    display: block; /* Ensures block-level display */
+    margin: 0 auto; /* Centers horizontally */
+}
+
+
+.about-logo:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto; /* Center the gallery horizontally */
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+}
+
+.image-gallery img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .logo-gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-name {
+        margin-bottom: 10px;
+        text-align: center; /* Center the text on small screens */
+    }
+
+    .about-logo {
+        width: 40%;
+        max-width: 150px;
+    }
+
+    .image-gallery img {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .logo-gallery-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .company-name {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .about-logo {
+        width: 30%;
+        max-width: 120px;
+    }
+
+    .image-gallery {
+        justify-content: center;
+    }
+
+    .image-gallery img {
+        width: 45%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 993px) {
+    .logo-gallery-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .company-name {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .about-logo {
+        width: 20%;
+        max-width: 100px;
+    }
+
+    .image-gallery {
+        flex-direction: row;
+    }
+
+    .image-gallery img {
+        width: 30%;
+    }
 }

@@ -19,6 +19,7 @@
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
     padding: 20px;
     border-radius: 10px;
+    width: 90%;
     max-width: 800px;
     margin: 20px 0;
 }
@@ -39,6 +40,7 @@
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
     padding: 20px;
     border-radius: 10px;
+    width: 90%;
     max-width: 800px;
     margin: 20px 0;
 }
@@ -52,4 +54,39 @@
 .company-explanation p {
     font-size: 1.2em;
     line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .mission-statement, .company-explanation {
+        width: 80%;
+    }
+
+    .mission-statement h2, .company-explanation h2 {
+        font-size: 1.8em;
+    }
+
+    .mission-statement p, .company-explanation p {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 992px) {
+    .mission-statement, .company-explanation {
+        width: 70%;
+    }
+
+    .mission-statement h2, .company-explanation h2 {
+        font-size: 2em;
+    }
+
+    .mission-statement p, .company-explanation p {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mission-statement, .company-explanation {
+        width: 60%;
+    }
 }

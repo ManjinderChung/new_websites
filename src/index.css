@@ -40,8 +40,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center; /* Center align items */
     color: #ffffff; /* White text for hero section */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for readability */
+    text-align: center; /* Center align text */
+    padding: 20px;
 }
 
 .jumbotron .btn-primary {
@@ -56,7 +59,7 @@ body {
 
 /* Section Styles */
 section {
-    padding: 60px 0;
+    padding: 60px 20px;
 }
 
 section h2 {
@@ -114,11 +117,75 @@ footer {
     color: #ffffff; /* White text */
     text-align: center;
     padding: 15px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
 footer p {
     margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2em;
+    }
+
+    .nav-link {
+        font-size: 1em;
+    }
+
+    .jumbotron {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .jumbotron h1 {
+        font-size: 2em;
+    }
+
+    .jumbotron p {
+        font-size: 1.2em;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+    .card-body h5 {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1em;
+    }
+
+    .nav-link {
+        font-size: 0.9em;
+    }
+
+    .jumbotron h1 {
+        font-size: 1.8em;
+    }
+
+    .jumbotron p {
+        font-size: 1.1em;
+    }
+
+    section h2 {
+        font-size: 1.6em;
+    }
+
+    section p {
+        font-size: 0.9em;
+    }
+
+    .card-body h5 {
+        font-size: 1em;
+    }
 }

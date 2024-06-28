@@ -1,0 +1,86 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Container */
+.nav-container {
+    padding: 0; /* Remove default padding if any */
+}
+
+/* Navbar Styles */
+.navBar {
+    display: flex;
+    justify-content: space-between; /* Space between brand and links */
+    align-items: center;
+    background-color: #f8f9fa; /* Light background color for the navbar */
+    padding: 10px 20px;
+}
+
+.navBar .nav-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+}
+
+.navBar .nav-menu {
+    display: flex;
+    justify-content: space-around; /* Equally space out the buttons */
+    align-items: center;
+}
+
+.navBar .nav-button {
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove border */
+    color: #000; /* Text color */
+    padding: 10px 20px; /* Padding inside the buttons */
+    text-align: center; /* Center text inside buttons */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease-in-out; /* Smooth transition for text color */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.navBar .nav-button:hover {
+    color: #f15f09; /* Change text color on hover */
+}
+
+/* Responsive Navbar Menu */
+.navBar .nav-toggle {
+    display: none; /* Hide the toggle button by default */
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navBar {
+        flex-direction: column; /* Stack the navbar vertically on small screens */
+        align-items: flex-start;
+    }
+
+    .navBar .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Hide menu by default */
+    }
+
+    .navBar .nav-menu.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .navBar .nav-button {
+        padding: 10px 15px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .navBar .nav-toggle {
+        display: block; /* Show the toggle button on small screens */
+    }
+}
