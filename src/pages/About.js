@@ -1,12 +1,11 @@
 import React from "react";
-import { Figure } from "react-bootstrap";
-import se_logo from "./se_logo.png"
+
 
 const About = () => {
 
   return (
     <div>
-      <h2 className="about-title">About Singh Engineering Solutions</h2>
+      <h2 className="about-title">About Us </h2>
       <p>
         Welcome to Singh Engineering Solutions, the leading experts in oil and
         gas decommissioning. With decades of experience in the oil and gas
@@ -84,24 +83,27 @@ const About = () => {
 
       <h2>Why Choose Us?</h2>
       <p>
-        <li>
-         Industry Leaders: We are at the forefront of the oil and gas
-          decommissioning sector, setting benchmarks for excellence.
-        </li>
+        <ul>
+          <li>
+            Industry Leaders: We are at the forefront of the oil and gas
+            decommissioning sector, setting benchmarks for excellence.
+          </li>
 
-        <li>
-        Tailored Solutions: We understand that every project is unique, and we
-        provide customized solutions to meet specific client needs.
-        </li>
+          <li>
+            Tailored Solutions: We understand that every project is unique, and
+            we provide customized solutions to meet specific client needs.
+          </li>
 
-        <li>Safety First: Safety is our top priority. We adhere to stringent safety
-        protocols to protect our workforce and the environment.
-        </li>
+          <li>
+            Safety First: Safety is our top priority. We adhere to stringent
+            safety protocols to protect our workforce and the environment.
+          </li>
 
-        <li>Proven Success: Our extensive portfolio of completed projects speaks to our capability
-        and reliability in the field.
-        </li>
- 
+          <li>
+            Proven Success: Our extensive portfolio of completed projects speaks
+            to our capability and reliability in the field.
+          </li>
+        </ul>
       </p>
     </div>
   );

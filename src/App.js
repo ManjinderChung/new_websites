@@ -1,12 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/Home.js";
-import Projects from "./components/Projects.js";
-import About from "./components/About.js";
-import Contact from "./components/ContactUs.js"
+import Home from "./pages/Home.js";
+import Projects from "./pages/Projects.js";
+import About from "./pages/About.js";
+import Contact from "./pages/ContactUs.js"
 import NavBar from "./components/NavBar";
 import Logo from "./components/logo"
-import Services from "./components/Services.js"
+import Services from "./pages/Services.js"
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {

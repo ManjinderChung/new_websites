@@ -1,0 +1,33 @@
+/* Logo.css */
+
+.logo-container {
+    display: flex;
+    flex-direction: column; /* Stack logo and text vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh; /* Ensure the logo is centered vertically on the page */
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+.about-logo {
+    width: 300px;
+    height: 300px;
+    object-fit: contain; /* Ensure the logo is properly scaled */
+    border: 2px solid #005792; /* Optional border for a professional look */
+    border-radius: 10px; /* Slight rounding for a polished appearance */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.about-logo:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+}
+
+.company-name {
+    margin-top: 15px; /* Space between logo and text */
+    font-size: 1.5em; /* Larger font size for company name */
+    font-weight: bold; /* Bold text */
+    color: #005792; /* Dark blue color for a professional look */
+    font-family: 'Arial', sans-serif; /* Professional-looking font */
+    text-align: center; /* Center the text */
+}

@@ -1,0 +1,55 @@
+/* Home.css */
+
+/* Set the background image for the home page */
+.home-container {
+    background: url('./offshore.jpeg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh; /* Ensure the background covers the entire viewport */
+    color: #ffffff; /* White text color for contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center align text */
+    padding: 20px;
+}
+
+/* Mission Statement Section */
+.mission-statement {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+.mission-statement h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ffd700; /* Gold color for the heading */
+}
+
+.mission-statement p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Company Explanation Section */
+.company-explanation {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+.company-explanation h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ffd700; /* Gold color for the heading */
+}
+
+.company-explanation p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
