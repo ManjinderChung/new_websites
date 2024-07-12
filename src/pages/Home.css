@@ -33,6 +33,7 @@
 .mission-statement p {
     font-size: 1.2em;
     line-height: 1.6;
+    color: white;
 }
 
 /* Company Explanation Section */
@@ -49,11 +50,13 @@
     font-size: 2em;
     margin-bottom: 10px;
     color: #ffd700; /* Gold color for the heading */
+    
 }
 
 .company-explanation p {
     font-size: 1.2em;
     line-height: 1.6;
+    color: white;
 }
 
 /* Responsive Adjustments */

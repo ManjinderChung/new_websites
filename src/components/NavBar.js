@@ -1,29 +1,68 @@
-import { Link } from "react-router-dom";
-import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import "./Navbar.css"; // Custom CSS file for navbar
 
 const NavBar = () => {
+  const [activeLink, setActiveLink] = useState(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location]);
+
   return (
-    <Container className="nav-container">
-      <nav className="navBar">
-        <Link to="/" className="nav-button">
-          Home
-        </Link>
-        <Link to="/about" className="nav-button">
-          About
-        </Link>
-        <Link to="/services" className="nav-button">
-          Services
-        </Link>
-        <Link to="/projects" className="nav-button">
-          Projects
-        </Link>
-        <Link to="/contact us" className="nav-button">
-          Contact
-        </Link>
-      </nav>
-    </Container>
+    <div>
+      <div className="nav-container">
+        <Container>
+          <nav className="navBar">
+            <Link
+              to="/"
+              className={`nav-button ${activeLink === "/" ? "active" : ""}`}
+              onClick={() => setActiveLink("/")}
+            >
+              Home
+            </Link>
+            <Link
+              to="/about"
+              className={`nav-button ${
+                activeLink === "/about" ? "active" : ""
+              }`}
+              onClick={() => setActiveLink("/about")}
+            >
+              About
+            </Link>
+            <Link
+              to="/services"
+              className={`nav-button ${
+                activeLink === "/services" ? "active" : ""
+              }`}
+              onClick={() => setActiveLink("/services")}
+            >
+              Services
+            </Link>
+            <Link
+              to="/projects"
+              className={`nav-button ${
+                activeLink === "/projects" ? "active" : ""
+              }`}
+              onClick={() => setActiveLink("/projects")}
+            >
+              Projects
+            </Link>
+            <Link
+              to="/contact"
+              className={`nav-button ${
+                activeLink === "/contact" ? "active" : ""
+              }`}
+              onClick={() => setActiveLink("/contact")}
+            >
+              Contact
+            </Link>
+          </nav>
+        </Container>
+      </div>
+    </div>
   );
 };
 

@@ -1,11 +1,10 @@
 import React from "react";
-
+import "./About.css"; // Import custom CSS file
 
 const About = () => {
-
   return (
-    <div>
-      <h2 className="about-title">About Us </h2>
+    <div className="about-container">
+      <h2 className="title">About Us</h2>
       <p>
         Welcome to Singh Engineering Solutions, the leading experts in oil and
         gas decommissioning. With decades of experience in the oil and gas
@@ -14,7 +13,7 @@ const About = () => {
         and efficient decommissioning of oil and gas facilities.
       </p>
 
-      <h2> Our Mission</h2>
+      <h2 className="title">Our Mission</h2>
       <p>
         At Singh Engineering Solutions, our mission is to lead the way in
         responsible and sustainable decommissioning practices. We are committed
@@ -24,15 +23,15 @@ const About = () => {
         industry standards and regulatory requirements.
       </p>
 
-      <h2>Our Services</h2>
+      <h2 className="title">Our Services</h2>
       <p>
         We offer a comprehensive range of services tailored to meet the unique
         needs of our clients in the oil and gas sector:-
         <ul>
           <li>
-            Decommissioning and Planning and Management:From initial assessments
-            to final execution, we provide end-to-end planning and management of
-            decommissioning projects.
+            Decommissioning and Planning and Management: From initial
+            assessments to final execution, we provide end-to-end planning and
+            management of decommissioning projects.
           </li>
 
           <li>
@@ -42,9 +41,9 @@ const About = () => {
           </li>
 
           <li>
-            Regulatory Compliance: Our team ensures all projects comply
-            withlocal, national, and international regulations, providing peace
-            of mind to our clients.
+            Regulatory Compliance: Our team ensures all projects comply with
+            local, national, and international regulations, providing peace of
+            mind to our clients.
           </li>
 
           <li>
@@ -60,7 +59,7 @@ const About = () => {
         </ul>
       </p>
 
-      <h2>Our Expertise </h2>
+      <h2 className="title">Our Expertise</h2>
 
       <p>
         With a proven track record of successful decommissioning projects, Singh
@@ -71,40 +70,38 @@ const About = () => {
         precision and expertise.
       </p>
 
-      <h2>Commitment to Sustainability </h2>
+      <h2 className="title">Commitment to Sustainability</h2>
 
       <p>
-        Commitment to Sustainability Sustainability is at the core of our
-        operations. We are dedicated to implementing decommissioning practices
-        that not only adhere to regulatory standards but also promote
-        environmental stewardship. Our commitment to sustainability ensures that
-        we leave a positive legacy for future generations.
+        Sustainability is at the core of our operations. We are dedicated to
+        implementing decommissioning practices that not only adhere to
+        regulatory standards but also promote environmental stewardship. Our
+        commitment to sustainability ensures that we leave a positive legacy for
+        future generations.
       </p>
 
-      <h2>Why Choose Us?</h2>
-      <p>
-        <ul>
-          <li>
-            Industry Leaders: We are at the forefront of the oil and gas
-            decommissioning sector, setting benchmarks for excellence.
-          </li>
+      <h2 className="title">Why Choose Us?</h2>
+      <ul>
+        <li>
+          Industry Leaders: We are at the forefront of the oil and gas
+          decommissioning sector, setting benchmarks for excellence.
+        </li>
 
-          <li>
-            Tailored Solutions: We understand that every project is unique, and
-            we provide customized solutions to meet specific client needs.
-          </li>
+        <li>
+          Tailored Solutions: We understand that every project is unique, and we
+          provide customized solutions to meet specific client needs.
+        </li>
 
-          <li>
-            Safety First: Safety is our top priority. We adhere to stringent
-            safety protocols to protect our workforce and the environment.
-          </li>
+        <li>
+          Safety First: Safety is our top priority. We adhere to stringent
+          safety protocols to protect our workforce and the environment.
+        </li>
 
-          <li>
-            Proven Success: Our extensive portfolio of completed projects speaks
-            to our capability and reliability in the field.
-          </li>
-        </ul>
-      </p>
+        <li>
+          Proven Success: Our extensive portfolio of completed projects speaks
+          to our capability and reliability in the field.
+        </li>
+      </ul>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 /* Company Name */
 .company-name {
+    margin-top: 100px;
     margin-bottom: 15px; /* Space between text and logo */
     font-size: 1.5em; /* Larger font size for company name */
     font-weight: bold; /* Bold text */
@@ -48,20 +49,23 @@
     transform: scale(1.05); /* Slightly increase the size on hover */
 }
 
-/* Image Gallery */
 .image-gallery {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    max-width: 1200px;
-    margin: 20px auto; /* Center the gallery horizontally */
-    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
-.image-gallery img {
-    width: 30%;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+.image-gallery .card {
+  width: 350px;
+  height: 150px;
+}
+
+.image-gallery .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
 }
 
 /* Responsive Adjustments */

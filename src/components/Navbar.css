@@ -1,86 +1,48 @@
-/* styles.css */
-
-/* Global Styles */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-}
-
 /* Navbar Container */
 .nav-container {
-    padding: 0; /* Remove default padding if any */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure navbar is on top of other content */
+  background-color: #5d7f95; /* Dark blue background */
+  padding: 10px 0;
 }
 
-/* Navbar Styles */
+/* Navbar */
 .navBar {
-    display: flex;
-    justify-content: space-between; /* Space between brand and links */
-    align-items: center;
-    background-color: #f8f9fa; /* Light background color for the navbar */
-    padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.navBar .nav-brand {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #000;
+.nav-button {
+  text-decoration: none; /* Removes underline from links */
+  color: white; /* Initial color */
+  padding: 10px 15px; /* Adds padding for a button-like appearance */
+  font-size: 16px; /* Font size */
+  transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
-.navBar .nav-menu {
-    display: flex;
-    justify-content: space-around; /* Equally space out the buttons */
-    align-items: center;
+.nav-button.active {
+  color: orange; /* Font color when clicked and active */
 }
 
-.navBar .nav-button {
-    background-color: transparent; /* Transparent background */
-    border: none; /* Remove border */
-    color: #000; /* Text color */
-    padding: 10px 20px; /* Padding inside the buttons */
-    text-align: center; /* Center text inside buttons */
-    text-decoration: none; /* Remove underline from links */
-    transition: color 0.3s ease-in-out; /* Smooth transition for text color */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
+/* Optional: Hover effect to indicate interactivity */
+.nav-button:hover {
+  color: darkorange;
 }
 
-.navBar .nav-button:hover {
-    color: #f15f09; /* Change text color on hover */
-}
 
-/* Responsive Navbar Menu */
-.navBar .nav-toggle {
-    display: none; /* Hide the toggle button by default */
-    background-color: transparent;
-    border: none;
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .navBar {
-        flex-direction: column; /* Stack the navbar vertically on small screens */
-        align-items: flex-start;
-    }
+  .navBar {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .navBar .nav-menu {
-        flex-direction: column;
-        width: 100%;
-        display: none; /* Hide menu by default */
-    }
-
-    .navBar .nav-menu.active {
-        display: flex; /* Show menu when active */
-    }
-
-    .navBar .nav-button {
-        padding: 10px 15px;
-        text-align: left;
-        width: 100%;
-    }
-
-    .navBar .nav-toggle {
-        display: block; /* Show the toggle button on small screens */
-    }
+  .nav-button {
+    margin-top: 10px;
+    font-size: 1em;
+  }
 }

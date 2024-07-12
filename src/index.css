@@ -10,27 +10,7 @@ body {
     color: #333; /* Standard text color */
 }
 
-/* Navbar Styles */
-.navbar {
-    background-color: #005792; /* Dark blue background */
-    padding: 15px;
-}
 
-.navbar-brand {
-    color: #ffffff; /* White text for brand name */
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.nav-link {
-    color: #ffffff; /* White text for nav links */
-    font-size: 1.1em;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #cccccc; /* Light grey on hover */
-}
 
 /* Hero Section Styles */
 .jumbotron {
@@ -126,14 +106,6 @@ footer p {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .navbar-brand {
-        font-size: 1.2em;
-    }
-
-    .nav-link {
-        font-size: 1em;
-    }
-
     .jumbotron {
         height: auto;
         padding: 40px 20px;
@@ -161,13 +133,6 @@ footer p {
 }
 
 @media (max-width: 576px) {
-    .navbar-brand {
-        font-size: 1em;
-    }
-
-    .nav-link {
-        font-size: 0.9em;
-    }
 
     .jumbotron h1 {
         font-size: 1.8em;
