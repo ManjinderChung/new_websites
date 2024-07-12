@@ -17,8 +17,7 @@ function App() {
     <div>
       <NavBar />
       <Logo />
-
-      {/* Define routes for the application */}
+           {/* Define routes for the application */}
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
