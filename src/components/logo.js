@@ -10,7 +10,7 @@ const Logo = () => {
         <h1>Singh Engineering Solutions Ltd</h1>
       </div>
       <div className="logo-container">
-        <Figure>
+       <Figure>
           <Figure.Image
             className="about-logo"
             alt="company Logo"
@@ -19,6 +19,7 @@ const Logo = () => {
         </Figure>
       </div>
     </div>
+
   );
 };
 
