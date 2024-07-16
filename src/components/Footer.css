@@ -1,21 +1,21 @@
-html, body {
-  height: 100%;
-  margin: 0;
+.footer {
+    background-color:orange;
+    color: rgb(47, 22, 192);
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 10;
 }
 
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.footer-text {
+    width: 100%;
+    position: relative;
 }
 
-main {
-  flex: 1;
-}
-
-footer {
-  background-color: #f5b477;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
+@media (max-width: 768px) {
+    .footer-text {
+        padding: 0.5rem 0;
+    }
 }

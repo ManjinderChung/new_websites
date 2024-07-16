@@ -1,35 +1,27 @@
 import React from "react";
-import "./Home.css"; // Import the custom CSS file
-import HomeImages from "../components/homeImages";
 
 const Home = () => {
-  return (
-    <div> 
-    <HomeImages />
-    <div className="home-container">
-    <div className="mission-statement">
-        <h2>Our Mission</h2>
-        <p>
-          At Singh Engineering Solutions Ltd, our mission is to deliver
-          innovative and reliable engineering solutions for the offshore oil and
-          gas industry. We are committed to excellence, safety, and
-          sustainability in all our projects.
-        </p>
-      </div>
-      <div className="company-explanation">
-        <h2>What We Do</h2>
-        <p>
-          Singh Engineering Solutions Ltd specialises in providing comprehensive
-          engineering services for offshore platforms, subsea systems, and
-          marine structures. Our team of experienced engineers and technicians
-          ensures the highest standards of quality and safety in every project
-          we undertake.
-        </p>
-      </div>
-     </div>
-    </div>
-  );
-};
+    return (
+      <div>
+        <h1>Welcome to Singh Engineering Solutions Ltd</h1>
 
+        <h3>Some other tagline</h3>
+
+        <p>
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It
+          has roots in a piece of classical Latin literature from 45 BC, making
+          it over 2000 years old. Richard McClintock, a Latin professor at
+          Hampden-Sydney College in Virginia, looked up one of the more obscure
+          Latin words, consectetur, from a Lorem Ipsum passage, and going
+          through the cites of the word in classical literature, discovered the
+          undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
+          1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
+          Evil) by Cicero, written in 45 BC. This book is a treatise on the
+          theory of ethics, very popular during the Renaissance. The first line
+          of Lorem Ipsum, "Lorem
+        </p>
+      </div>
+    );
+}
 
 export default Home;

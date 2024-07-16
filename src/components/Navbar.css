@@ -1,48 +1,16 @@
-/* Navbar Container */
-.nav-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000; /* Ensure navbar is on top of other content */
-  background-color: #5d7f95; /* Dark blue background */
-  padding: 10px 0;
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Navbar */
-.navBar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.navbar-brand {
+  font-size: 1.5rem;
 }
 
-.nav-button {
-  text-decoration: none; /* Removes underline from links */
-  color: white; /* Initial color */
-  padding: 10px 15px; /* Adds padding for a button-like appearance */
-  font-size: 16px; /* Font size */
-  transition: color 0.3s ease; /* Smooth transition for color change */
+.nav-link {
+  color: white ;
 }
 
-.nav-button.active {
-  color: orange; /* Font color when clicked and active */
-}
-
-/* Optional: Hover effect to indicate interactivity */
-.nav-button:hover {
-  color: darkorange;
-}
-
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .navBar {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-button {
-    margin-top: 10px;
-    font-size: 1em;
-  }
+.nav-item.active .nav-link {
+  font-weight: bold;
+  color: orange;
 }

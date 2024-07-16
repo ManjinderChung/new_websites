@@ -1,7 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import { Container } from "react-bootstrap";
-import "./Navbar.css"; // Custom CSS file for navbar
+import { Navbar, Nav, Container } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+//import "./Navbar.css"; // Custom CSS file for navbar
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -12,57 +13,69 @@ const NavBar = () => {
   }, [location]);
 
   return (
-    <div>
-      <div className="nav-container">
-        <Container>
-          <nav className="navBar">
-            <Link
+    <Navbar
+      bg="dark"
+      variant="dark"
+      expand="lg"
+      fixed="top"
+      style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+    >
+      <Container>
+        <Navbar.Brand as={Link} to="/">
+          <img
+            src="/se_logo.png" // Replace with the path to your logo image
+            alt="Logo"
+            height="30" // Adjust the height as needed
+            className="d-inline-block align-top"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbar-nav" />
+        <Navbar.Collapse id="navbar-nav">
+          <Nav className="ml-auto">
+            <Nav.Link
+              as={Link}
               to="/"
-              className={`nav-button ${activeLink === "/" ? "active" : ""}`}
+              className={activeLink === "/" ? "active" : ""}
               onClick={() => setActiveLink("/")}
             >
               Home
-            </Link>
-            <Link
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
               to="/about"
-              className={`nav-button ${
-                activeLink === "/about" ? "active" : ""
-              }`}
+              className={activeLink === "/about" ? "active" : ""}
               onClick={() => setActiveLink("/about")}
             >
               About
-            </Link>
-            <Link
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
               to="/services"
-              className={`nav-button ${
-                activeLink === "/services" ? "active" : ""
-              }`}
+              className={activeLink === "/services" ? "active" : ""}
               onClick={() => setActiveLink("/services")}
             >
               Services
-            </Link>
-            <Link
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
               to="/projects"
-              className={`nav-button ${
-                activeLink === "/projects" ? "active" : ""
-              }`}
+              className={activeLink === "/projects" ? "active" : ""}
               onClick={() => setActiveLink("/projects")}
             >
               Projects
-            </Link>
-            <Link
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
               to="/contact"
-              className={`nav-button ${
-                activeLink === "/contact" ? "active" : ""
-              }`}
+              className={activeLink === "/contact" ? "active" : ""}
               onClick={() => setActiveLink("/contact")}
             >
               Contact
-            </Link>
-          </nav>
-        </Container>
-      </div>
-    </div>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 

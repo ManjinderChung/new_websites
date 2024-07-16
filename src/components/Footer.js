@@ -1,18 +1,21 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+//import "./Footer.css";
 
-const Footer = () => {
-  return (
-    <footer className="footer-text">
-      <Container>
-        <Row>
-          <Col className="text-center">
-            <p>&copy; {new Date().getFullYear()} Singh Engineering Solutions Ltd</p>
-          </Col>
-        </Row>
-      </Container>
-    </footer>
-  );
-};
+const Footer = () => (
+  <footer
+    style={{
+      backgroundColor: "rgba(245, 180, 119, 0.9)",
+      color: "black",
+      textAlign: "center",
+      padding: "1rem 0",
+      width: "100%",
+      position: "fixed",
+      bottom: "0",
+      left: "0",
+    }}
+  >
+    <p>&copy; 2024 Singh Engineering Solutions Ltd. All rights reserved.</p>
+  </footer>
+);
 
 export default Footer;
