@@ -21,7 +21,7 @@ body {
     background-attachment: fixed; /* Ensure background stays fixed */
     padding-top: 60px; /* Adjust this value based on the height of your navbar */
     padding-bottom: 60px; /* Adjust this value based on the height of your footer */
-    background-color: rgb(221, 110, 7); /* Set the background color between navbar and footer */
+    background-color: rgba(0,115,152,255); /* Set the background color between navbar and footer */
 }
 
 

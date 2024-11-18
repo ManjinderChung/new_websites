@@ -2,15 +2,20 @@ import { Link, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-//import "./Navbar.css"; // Custom CSS file for navbar
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState(null);
   const location = useLocation();
+  const [expanded, setExpanded] = useState(false); // Add state for navbar collapse control
 
   useEffect(() => {
     setActiveLink(location.pathname);
   }, [location]);
+
+  const handleNavClick = (link) => {
+    setActiveLink(link);
+    setExpanded(false); // Collapse the navbar after selecting a link
+  };
 
   return (
     <Navbar
@@ -18,6 +23,7 @@ const NavBar = () => {
       variant="dark"
       expand="lg"
       fixed="top"
+      expanded={expanded} // Control the expanded state
       style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
     >
       <Container>
@@ -29,14 +35,17 @@ const NavBar = () => {
             className="d-inline-block align-top"
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbar-nav" />
+        <Navbar.Toggle
+          aria-controls="navbar-nav"
+          onClick={() => setExpanded(!expanded)} // Toggle collapse on click
+        />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link
               as={Link}
               to="/"
               className={activeLink === "/" ? "active" : ""}
-              onClick={() => setActiveLink("/")}
+              onClick={() => handleNavClick("/")}
             >
               Home
             </Nav.Link>
@@ -44,7 +53,7 @@ const NavBar = () => {
               as={Link}
               to="/about"
               className={activeLink === "/about" ? "active" : ""}
-              onClick={() => setActiveLink("/about")}
+              onClick={() => handleNavClick("/about")}
             >
               About
             </Nav.Link>
@@ -52,7 +61,7 @@ const NavBar = () => {
               as={Link}
               to="/services"
               className={activeLink === "/services" ? "active" : ""}
-              onClick={() => setActiveLink("/services")}
+              onClick={() => handleNavClick("/services")}
             >
               Services
             </Nav.Link>
@@ -60,7 +69,7 @@ const NavBar = () => {
               as={Link}
               to="/projects"
               className={activeLink === "/projects" ? "active" : ""}
-              onClick={() => setActiveLink("/projects")}
+              onClick={() => handleNavClick("/projects")}
             >
               Projects
             </Nav.Link>
@@ -68,7 +77,7 @@ const NavBar = () => {
               as={Link}
               to="/contact"
               className={activeLink === "/contact" ? "active" : ""}
-              onClick={() => setActiveLink("/contact")}
+              onClick={() => handleNavClick("/contact")}
             >
               Contact
             </Nav.Link>

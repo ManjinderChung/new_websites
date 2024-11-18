@@ -1,9 +1,11 @@
 import React from "react";
-//import "./About.css"; // Import custom CSS file
+import Title from "../components/Title";
 
 const About = () => {
   return (
-    <div className="about-container">
+      
+      <div className="about-container">
+        
       <h2 className="title">About Us</h2>
       <p>
         Welcome to Singh Engineering Solutions, the leading experts in oil and
