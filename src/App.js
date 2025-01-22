@@ -7,6 +7,7 @@ import Contact from "./pages/ContactUs.js";
 import Services from "./pages/Services.js";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import Title from "./components/Title.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css"; // Add custom styles here
 

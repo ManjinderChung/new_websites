@@ -27,34 +27,28 @@ const NavBar = () => {
       style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
     >
       <Container>
-        {/* Left Aligned Logo */}
-        <Navbar.Brand as={Link} to="/">
+        {/* Left Aligned Logo with Text */}
+        <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
           <img
             src="/se_logo.png" // Replace with the path to your logo image
             alt="Singh Engineering Solutions Logo"
             height="30"
-            className="d-inline-block align-top"
+            className="d-inline-block align-top me-2"
           />
+          <span
+            className="text-light font-weight-bold"
+            style={{ fontSize: "1.25rem" }}
+          >
+            Singh Engineering Solutions
+          </span>
         </Navbar.Brand>
 
-        {/* Centered Title */}
         <Navbar.Toggle
           aria-controls="navbar-nav"
           onClick={() => setExpanded(!expanded)} // Toggle collapse on click
         />
         <Navbar.Collapse id="navbar-nav">
-          <Nav className="mx-auto">
-            <Navbar.Text
-              className="text-light text-center font-weight-bold"
-              style={{ fontSize: "1.25rem" }}
-            >
-              Singh Engineering Solutions Ltd
-            </Navbar.Text>
-          </Nav>
-        </Navbar.Collapse>
-
-        {/* Right Aligned Navigation Links */}
-        <Navbar.Collapse id="navbar-nav">
+          {/* Right Aligned Navigation Links */}
           <Nav className="ms-auto">
             <Nav.Link
               as={Link}
